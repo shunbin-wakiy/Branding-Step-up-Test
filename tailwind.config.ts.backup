@@ -62,9 +62,6 @@ const config = {
           blue: "#4195D3",
         },
       },
-      fontFamily: {
-        "zen-kaku-gothic-new": ["var(--font-zen-kaku-gothic-new)", "sans-serif"],
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
