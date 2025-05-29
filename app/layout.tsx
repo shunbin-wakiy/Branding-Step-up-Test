@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const zenKakuGothicNew = Zen_Kaku_Gothic_New({
+  weight: ["400", "500", "700"],
+  variable: "--font-zen-kaku-gothic-new",
+  display: "swap",
   subsets: ["latin"],
 });
 
@@ -25,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${zenKakuGothicNew.variable} font-zen-kaku-gothic-new font-sans antialiased`}
         suppressHydrationWarning={true}
       >
         {children}

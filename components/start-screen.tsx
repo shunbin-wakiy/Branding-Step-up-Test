@@ -21,8 +21,8 @@ export default function StartScreen({ onStart }: StartScreenProps) {
           <p className="text-xl text-gray-500">ブランディングタイプ診断</p>
         </div>
 
-        <p className="text-gray-500 mb-8 max-w-md">
-          質問に答えて、あなたの事業の「らしさの種」を発見しましょう。
+        <p className="text-gray-500 mb-8 max-w-lg whitespace-pre-line">
+          質問に答えて、あなたの事業の「らしさの種」を発見しましょう。<br />
           診断結果からブランドの成長可能性が見えてきます。
         </p>
 
