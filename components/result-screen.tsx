@@ -26,6 +26,7 @@ export default function ResultScreen({ character, onRestart }: ResultScreenProps
             width={200}
             height={200}
             className="object-contain"
+            loading="lazy"
           />
         </div>
 
