@@ -57,7 +57,7 @@ export default function BrandingTest() {
   }
 
   const calculateResult = (answers: Record<string, Answer>): string => {
-    // Q1でNOを選択した場合
+    // Q1でNOを選択した場合 → とりあえずはじまり研究者タイプ（後で決定）
     if (answers["q1"] === false) {
       return "hajimari"
     }
@@ -72,15 +72,25 @@ export default function BrandingTest() {
       return "hajimari"
     }
 
-    // Q3でYES、Q4でNOを選択した場合
-    if (answers["q3"] === true && answers["q4"] === false) {
+    // Q3でNOを選択した場合
+    if (answers["q3"] === false) {
+      return "hajimari"
+    }
+
+    // Q1「はい」→Q1-2「新規ブランド」→Q3「はい」/Q4「いいえ」→ チャレンジャータイプ
+    if (
+      answers["q1"] === true &&
+      answers["q1-2"] === "新規ブランド" &&
+      answers["q3"] === true &&
+      answers["q4"] === false
+    ) {
       return "challenger"
     }
 
     // All YES (Q1: YES, Q1-2: 新ブランド, Q2: YES, Q3: YES, Q4: YES)
     if (
       answers["q1"] === true &&
-      answers["q1-2"] === "新ブランド" &&
+      answers["q1-2"] === "新規ブランド" &&
       answers["q2"] === true &&
       answers["q3"] === true &&
       answers["q4"] === true
