@@ -27,20 +27,20 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
         {question.type === QuestionType.YES_NO ? (
           <>
             <Button
-              onClick={() => onAnswer(false)}
-              variant="destructive"
-              size="lg"
-              className="px-12 py-3 text-lg rounded-full"
-            >
-              いいえ
-            </Button>
-            <Button
               onClick={() => onAnswer(true)}
               variant="default"
               size="lg"
-              className="px-12 py-3 text-lg rounded-full bg-emerald-500 hover:bg-emerald-600"
+              className="w-32 px-12 py-3 text-lg rounded-full bg-red-500 hover:bg-red-600"
             >
               はい
+            </Button>
+            <Button
+              onClick={() => onAnswer(false)}
+              variant="destructive"
+              size="lg"
+              className="w-32 px-12 py-3 text-lg rounded-full bg-emerald-500 hover:bg-emerald-600"
+            >
+              いいえ
             </Button>
           </>
         ) : (
