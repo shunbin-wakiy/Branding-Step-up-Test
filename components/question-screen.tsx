@@ -19,11 +19,11 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
           <p className="text-xl text-gray-400">
             質問 {questionNumber}/{totalQuestions}
           </p>
-          <h2 className="text-2xl text-gray-600 max-w-md mx-auto whitespace-pre-line">{question.text}</h2>
+          <h2 className="text-xl sm:text-2xl text-gray-600 max-w-md mx-auto whitespace-pre-line">{question.text}</h2>
         </div>
       </CardContent>
 
-      <CardFooter className="flex justify-center gap-4 p-6">
+      <CardFooter className="flex justify-center gap-4 py-0 px-6 sm:py-6">
         {question.type === QuestionType.YES_NO ? (
           <>
             <Button
@@ -51,7 +51,7 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
                 onClick={() => onAnswer(choice)}
                 variant={index === 0 ? "destructive" : "default"}
                 size="lg"
-                className={`px-8 py-6 text-lg rounded-full ${index === 0 ? "bg-emerald-500 hover:bg-emerald-600" : "bg-blue-500 hover:bg-blue-600"}`}
+                className={`px-4 sm:px-8 py-2 text-base sm:text-lg rounded-full ${index === 0 ? "bg-emerald-500 hover:bg-emerald-600" : "bg-blue-500 hover:bg-blue-600"}`}
               >
                 {choice}
               </Button>
