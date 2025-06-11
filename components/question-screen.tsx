@@ -17,7 +17,7 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
       <CardContent className="flex flex-col items-center justify-center p-12 min-h-[350px] text-center">
         <div className="space-y-12 w-full">
           <p className="text-xl text-gray-400">
-            質問 {questionNumber}/{totalQuestions}
+            Q. {questionNumber}/{totalQuestions}
           </p>
           <h2 className="text-xl sm:text-2xl text-gray-600 max-w-md mx-auto whitespace-pre-line">{question.text}</h2>
         </div>
