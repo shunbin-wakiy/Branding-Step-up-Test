@@ -60,7 +60,7 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
         )}
       </CardFooter>
 
-      <div className="text-center pb-6 text-xs text-gray-400">ブランディングタイプ診断</div>
+      <div className="text-center pb-6 text-xs text-gray-400">ブランディング・ステップアップ診断</div>
     </Card>
   )
 }

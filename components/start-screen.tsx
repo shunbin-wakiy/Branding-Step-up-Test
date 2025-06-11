@@ -14,11 +14,9 @@ export default function StartScreen({ onStart }: StartScreenProps) {
       <CardContent className="flex flex-col items-center justify-center p-12 min-h-[500px] text-center">
         <div className="space-y-12 mb-10">
           <h1 className="text-5xl font-bold text-gray-600">
-            Branding
-            <br />
-            Personality Test
+            Branding Step-up Test
           </h1>
-          <p className="text-xl text-gray-500">ブランディングタイプ診断</p>
+          <p className="text-xl text-gray-500">ブランディング・ステップアップ診断</p>
         </div>
 
         <p className="text-gray-500 mb-8 max-w-lg whitespace-pre-line">
