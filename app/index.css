@@ -1,0 +1,57 @@
+.questionArea {
+  position: relative;
+}
+.questionArea .questionText {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandingBg {
+  border-bottom: 10px solid #872d21;
+  position: relative;
+  overflow-x: clip;
+}
+.brandingBg .inner {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
+}
+.brandingBg .inner .tane {
+  position: absolute;
+  bottom: 0;
+  left: 19.27%;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .brandingBg .inner .tane {
+    left: 10px;
+  }
+}
+.brandingBg .inner .dog {
+  position: absolute;
+  bottom: 0;
+  left: 33.59%;
+  z-index: 1;
+}
+.brandingBg .inner .dog figure {
+  animation: obj_rl 1s steps(2) infinite;
+}
+.brandingBg .inner .tree {
+  position: absolute;
+  bottom: -8px;
+  right: 9.11%;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .brandingBg .inner .tree {
+    right: -40px;
+  }
+}
+
+@keyframes obj_rl {
+  to {
+    transform: rotate(-6deg);
+  }
+}
