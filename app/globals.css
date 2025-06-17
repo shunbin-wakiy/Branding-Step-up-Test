@@ -120,3 +120,8 @@
     @apply bg-background text-foreground font-sans;
   }
 }
+
+body {
+  background: #fffdf1;
+  color: #872d21;
+}
