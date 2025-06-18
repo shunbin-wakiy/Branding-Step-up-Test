@@ -131,8 +131,8 @@ export default function BrandingTest() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white">
-      <div className="w-full max-w-2xl mx-auto p-4">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="w-full">
         {currentScreen === "start" && <StartScreen onStart={handleStartTest} />}
 
         {currentScreen === "question" && (

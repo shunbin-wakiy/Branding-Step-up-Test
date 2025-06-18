@@ -2,7 +2,6 @@
 
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 
 interface StartScreenProps {
   onStart: () => void
@@ -10,15 +9,13 @@ interface StartScreenProps {
 
 export default function StartScreen({ onStart }: StartScreenProps) {
   return (
-    <Card className="w-full shadow-lg border-0">
-      <CardContent className="flex flex-col items-center justify-center p-12 min-h-[500px] text-center">
+    <div className="w-full">
+      <div className="flex flex-col items-center justify-center p-12 min-h-[500px] text-center">
         <div className="space-y-12 mb-10">
           <h1 className="text-5xl font-bold text-gray-600">
-            Branding
-            <br />
-            Personality Test
+            Branding Step-up Test
           </h1>
-          <p className="text-xl text-gray-500">ブランディングタイプ診断</p>
+          <p className="text-xl text-gray-500">ブランディング・ステップアップ診断</p>
         </div>
 
         <p className="text-gray-500 mb-8 max-w-lg whitespace-pre-line">
@@ -30,7 +27,7 @@ export default function StartScreen({ onStart }: StartScreenProps) {
           診断を始める
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   )
 }

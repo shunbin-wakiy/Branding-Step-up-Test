@@ -14,12 +14,12 @@ export const questions: Question[] = [
   },
   {
     id: "q2",
-    text: "過去に新ブランド立ち上げに\n関わったことはありますか？",
+    text: "過去にブランディングの\nご経験はありますか？",
     type: QuestionType.YES_NO,
   },
   {
     id: "q3",
-    text: "新ブランド立ち上げ後、\n課題を感じてまだできることを\n模索していますか？",
+    text: "過去のブランディングにおいて、\n課題や困難を感じられたことは\nありますか？",
     type: QuestionType.YES_NO,
   },
   {
