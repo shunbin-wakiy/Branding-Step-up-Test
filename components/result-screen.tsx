@@ -18,14 +18,14 @@ export default function ResultScreen({ character, onRestart }: ResultScreenProps
           <p className="text-2xl text-gray-500">あなたは...</p>
         </div>
 
-        <div className="my-8 relative w-48 h-48">
+        <div className="my-4 relative">
           <Image
             src={character.imageSrc || "/placeholder.svg"}
             alt={character.name}
-            width={200}
-            height={200}
             className="object-contain"
             loading="lazy"
+            width={200}
+            height={200}
           />
         </div>
 
