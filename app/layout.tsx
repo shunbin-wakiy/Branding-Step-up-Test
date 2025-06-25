@@ -10,8 +10,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Brand Personality Test",
-  description: "ブランドパーソナリティテスト - あなたのブランドの個性を発見しましょう",
+  title: "Branding Step-up Test",
+  description: "ブランディング・ステップアップ診断 - 質問に答えて、あなたの事業の「らしさの種」を発見しましょう。診断結果からブランドの成長可能性が見えてきます。",
 };
 
 export default function RootLayout({
