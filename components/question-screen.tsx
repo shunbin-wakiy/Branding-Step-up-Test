@@ -64,7 +64,7 @@ export default function QuestionScreen({ question, questionNumber, totalQuestion
         <div className="inner">
             <div className="tane"><figure><img src="/images/tane.svg" alt="" loading="lazy" /></figure></div>
             <div className="dog"><figure><img src="/images/dog.svg" alt="" loading="lazy" /></figure></div>
-            <div className="tree"><figure><img src="/images/tree.svg" alt="" loading="lazy" /></figure></div>
+            <div className="tree"><figure><img src="/images/tree.svg" alt="" loading="lazy" width={178} /></figure></div>
         </div>
       </div>
       <div className="text-center pb-6 text-xs text-gray-400 font-medium">ブランディング・ステップアップ診断</div>
