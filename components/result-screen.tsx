@@ -43,9 +43,9 @@ export default function ResultScreen({ character, onRestart }: ResultScreenProps
       </div>
 
       <div className="flex justify-center p-6">
-        <Button onClick={onRestart} variant="outline" size="lg" className="px-8 py-6 text-lg rounded-full">
+        <Button onClick={onRestart} variant="outline" size="lg" className="px-8 py-6 text-lg rounded-full restartButton">
           <RefreshCw className="mr-2 h-5 w-5 text-gray-500" />
-          もう一度診断する
+          <span className="text-gray-500">もう一度診断する</span>
         </Button>
       </div>
     </div>

@@ -127,3 +127,28 @@ button.startButton {
         }
     }
 }
+
+button.restartButton {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  svg {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  span {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  &:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #872d21;
+    svg {
+      color: #872d21;
+    }
+    span {
+      color: #872d21;
+    }
+  }
+  
+}
