@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const notoSansJP = Noto_Sans_JP({
   weight: ["400", "500", "700"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
