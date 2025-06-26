@@ -72,15 +72,27 @@ export default function BrandingTest() {
       return "hajimari"
     }
 
-    // Q3でNOを選択した場合
+    // Q1「はい」→Q1-2「新規ブランド」→Q2「はい」→Q3「いいえ」→Q4「はい」→ ブラッシュアップ職人タイプ（新規追加）
+    if (
+      answers["q1"] === true &&
+      answers["q1-2"] === "新規ブランド" &&
+      answers["q2"] === true &&
+      answers["q3"] === false &&
+      answers["q4"] === true
+    ) {
+      return "brushup"
+    }
+
+    // Q3でNOを選択した場合（Q4でNOまたは未回答の場合）
     if (answers["q3"] === false) {
       return "hajimari"
     }
 
-    // Q1「はい」→Q1-2「新規ブランド」→Q3「はい」/Q4「いいえ」→ チャレンジャータイプ
+    // Q1「はい」→Q1-2「新規ブランド」→Q2「はい」→Q3「はい」→Q4「いいえ」→ チャレンジャータイプ
     if (
       answers["q1"] === true &&
       answers["q1-2"] === "新規ブランド" &&
+      answers["q2"] === true &&
       answers["q3"] === true &&
       answers["q4"] === false
     ) {
