@@ -121,3 +121,27 @@ button.startButton:hover {
 button.startButton:hover svg {
   transform: translateX(4px);
 }
+
+button.restartButton {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button.restartButton:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #872d21;
+}
+button.restartButton:hover svg {
+  color: #872d21;
+}
+button.restartButton:hover span {
+  color: #872d21;
+}
