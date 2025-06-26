@@ -18,11 +18,11 @@ export default function ResultScreen({ character, onRestart }: ResultScreenProps
           <p className="text-2xl text-gray-500">あなたは...</p>
         </div>
 
-        <div className="my-4 relative">
+        <div className="my-4 relative flex justify-center">
           <Image
             src={character.imageSrc || "/placeholder.svg"}
             alt={character.name}
-            className="object-contain"
+            className="object-contain w-[80%] max-w-md"
             loading="lazy"
             width={200}
             height={200}
